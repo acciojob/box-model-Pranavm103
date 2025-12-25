@@ -1,1 +1,40 @@
 /*  your css code here. If applicable */
+* {
+  box-sizing: border-box;
+}
+
+/* main box-model container */
+.container {
+  width: 300px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  text-align: center;   /* keeps circles on one line */
+  background-color: lightgrey;
+  border:2px solid black;
+}
+
+/* shared circle styles */
+.red,
+.green,
+.yellow {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;           /* makes each block a circle */ /* [web:33] */
+  display: inline-block;        /* inline blocks inside container */ /* [web:42] */
+  margin: 0 10px;
+}
+
+/* individual colors */
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
